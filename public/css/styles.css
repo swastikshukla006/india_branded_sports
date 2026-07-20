@@ -504,3 +504,11 @@ button { color: inherit; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Editorial type system — intentionally avoids generic AI-template typography */
+:root { --display-font: "Barlow Condensed", "Arial Narrow", sans-serif; --body-font: "Source Sans 3", Arial, sans-serif; }
+body { font-family: var(--body-font); letter-spacing: .005em; }
+h1,h2,h3,.brand-copy strong,.button,.brand-chip,.kicker,.eyebrow { font-family: var(--display-font); }
+h1 { letter-spacing: -.025em; text-transform: uppercase; font-weight: 800; }
+h2 { letter-spacing: -.018em; font-weight: 700; }
+.product-card h3 { font-size: 1.5rem; letter-spacing: -.01em; }

@@ -245,3 +245,7 @@ button:disabled { opacity: .55; cursor: not-allowed; }
   .dialog-actions { flex-direction: column-reverse; }
   .dialog-actions button { width: 100%; }
 }
+
+:root { --display-font: "Barlow Condensed", "Arial Narrow", sans-serif; --body-font: "Source Sans 3", Arial, sans-serif; }
+body,input,textarea,select,button { font-family: var(--body-font); }
+h1,h2,h3,.admin-brand strong,.primary-button,.panel-nav button { font-family: var(--display-font); }
