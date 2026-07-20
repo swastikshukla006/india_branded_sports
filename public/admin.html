@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08110e">
+  <link rel="icon" href="/assets/brand/favicon.png">
+  <link rel="stylesheet" href="/css/admin.css">
+  <title>IBS Easy Admin</title>
+</head>
+<body>
+  <main>
+    <section class="login-screen" id="loginScreen">
+      <form class="login-card" id="loginForm">
+        <img src="/assets/brand/logo.webp" alt="India's Branded Sports">
+        <span class="tiny-label">Easy Admin</span>
+        <h1>Manage your website</h1>
+        <p>Enter the admin password. Nothing technical is needed.</p>
+        <label>Password<input id="loginPassword" type="password" autocomplete="current-password" required></label>
+        <button class="primary-button" type="submit">Open Admin</button>
+        <p class="form-message" id="loginMessage" role="alert"></p>
+        <a href="/">← Back to website</a>
+      </form>
+    </section>
+
+    <section class="admin-shell hidden" id="adminShell">
+      <header class="admin-header">
+        <div class="admin-brand">
+          <img id="adminLogo" src="/assets/brand/logo.webp" alt="IBS logo">
+          <div><strong>IBS Easy Admin</strong><small>Tap a section, change it, save it.</small></div>
+        </div>
+        <div class="header-actions">
+          <a class="light-button" href="/" target="_blank" rel="noopener">View Website</a>
+          <button class="light-button" id="logoutButton" type="button">Log Out</button>
+        </div>
+      </header>
+
+      <div class="admin-layout">
+        <nav class="admin-nav" aria-label="Admin sections">
+          <button class="nav-card active" data-panel="quick"><span>⚡</span><strong>Quick Edit</strong><small>Prices and main text</small></button>
+          <button class="nav-card" data-panel="products"><span>🏏</span><strong>Products</strong><small>Add or edit bats</small></button>
+          <button class="nav-card" data-panel="pictures"><span>🖼</span><strong>Pictures</strong><small>Logo and home photos</small></button>
+          <button class="nav-card" data-panel="policies"><span>📦</span><strong>Delivery & Policy</strong><small>Returns and payment</small></button>
+          <button class="nav-card" data-panel="tools"><span>🛠</span><strong>Tools</strong><small>Reset demo data</small></button>
+        </nav>
+
+        <section class="admin-content">
+          <div class="status-bar" id="statusBar" role="status">Ready</div>
+
+          <section class="panel active" id="panel-quick">
+            <div class="panel-title"><div><span>Quick Edit</span><h1>Change the most important things</h1></div><button class="primary-button save-settings" type="button">Save Changes</button></div>
+            <form class="form-grid" id="quickForm">
+              <label class="wide">Top announcement<input name="announcement" maxlength="240"></label>
+              <label class="wide">Main heading<input name="heroTitle" maxlength="240"></label>
+              <label class="wide">Main description<textarea name="heroText" rows="3" maxlength="1200"></textarea></label>
+              <label>Website price (₹)<input name="defaultPrice" type="number" min="0"></label>
+              <label>MRP (₹)<input name="defaultMrp" type="number" min="0"></label>
+              <label>Booking amount (₹)<input name="bookingAmount" type="number" min="0"></label>
+              <label>WhatsApp number<input name="whatsapp" inputmode="numeric"></label>
+              <label>Number shown on website<input name="phoneDisplay"></label>
+              <label>Instagram username<input name="instagram"></label>
+              <label>Brand name<input name="brandName"></label>
+              <label>Tagline<input name="tagline"></label>
+              <label>Developer name<input name="developerName"></label>
+              <label>Developer Instagram<input name="developerInstagram"></label>
+            </form>
+          </section>
+
+          <section class="panel" id="panel-products">
+            <div class="panel-title"><div><span>Products</span><h1>Your cricket bats</h1><p>Use the big buttons. Product order on this screen is the order shown on the website.</p></div><button class="primary-button" id="addProductButton" type="button">+ Add New Bat</button></div>
+            <div class="product-admin-list" id="productAdminList"></div>
+          </section>
+
+          <section class="panel" id="panel-pictures">
+            <div class="panel-title"><div><span>Pictures</span><h1>Replace home page pictures</h1><p>Choose a new JPG, PNG or WEBP. It changes after you press Save Pictures.</p></div><button class="primary-button" id="savePicturesButton" type="button">Save Pictures</button></div>
+            <div class="picture-grid" id="pictureGrid">
+              <article data-key="logo"><img alt="Current logo"><h3>Logo</h3><label class="upload-button">Choose New Logo<input type="file" accept="image/png,image/jpeg,image/webp"></label></article>
+              <article data-key="heroImage"><img alt="Current hero picture"><h3>Main hero picture</h3><label class="upload-button">Choose New Picture<input type="file" accept="image/png,image/jpeg,image/webp"></label></article>
+              <article data-key="heroMiniOne"><img alt="Current small hero picture one"><h3>Small hero picture 1</h3><label class="upload-button">Choose New Picture<input type="file" accept="image/png,image/jpeg,image/webp"></label></article>
+              <article data-key="heroMiniTwo"><img alt="Current small hero picture two"><h3>Small hero picture 2</h3><label class="upload-button">Choose New Picture<input type="file" accept="image/png,image/jpeg,image/webp"></label></article>
+              <article data-key="storyImage1"><img alt="Current inspiration picture one"><h3>Inspiration picture 1</h3><label class="upload-button">Choose New Picture<input type="file" accept="image/png,image/jpeg,image/webp"></label></article>
+              <article data-key="storyImage2"><img alt="Current inspiration picture two"><h3>Inspiration picture 2</h3><label class="upload-button">Choose New Picture<input type="file" accept="image/png,image/jpeg,image/webp"></label></article>
+              <article data-key="storyImage3"><img alt="Current inspiration picture three"><h3>Inspiration picture 3</h3><label class="upload-button">Choose New Picture<input type="file" accept="image/png,image/jpeg,image/webp"></label></article>
+            </div>
+          </section>
+
+          <section class="panel" id="panel-policies">
+            <div class="panel-title"><div><span>Delivery & Policy</span><h1>What customers read</h1></div><button class="primary-button save-settings" type="button">Save Changes</button></div>
+            <form class="form-grid" id="policyForm">
+              <label class="wide">Delivery time<input name="deliveryTime"></label>
+              <label class="wide">Shipping information<textarea name="shippingNote" rows="3"></textarea></label>
+              <label class="wide">Return policy<textarea name="returnPolicy" rows="5"></textarea></label>
+              <label class="wide">Payment and COD information<textarea name="codNote" rows="5"></textarea></label>
+              <label class="wide">Small player-image disclaimer<textarea name="editorialDisclaimer" rows="4"></textarea></label>
+              <label class="wide">Free services (one per line)<textarea name="freeServices" rows="5"></textarea></label>
+            </form>
+          </section>
+
+          <section class="panel" id="panel-tools">
+            <div class="panel-title"><div><span>Tools</span><h1>Safe website tools</h1></div></div>
+            <div class="tool-card">
+              <h2>Restore the original website</h2>
+              <p>This removes admin changes and restores the products and information supplied with this package. Uploaded files remain on the server.</p>
+              <button class="danger-button" id="resetButton" type="button">Restore Original Data</button>
+            </div>
+            <div class="tool-card">
+              <h2>Important hosting note</h2>
+              <p>For uploaded pictures and admin changes to survive a hosting restart, deploy with the included persistent-disk configuration.</p>
+            </div>
+          </section>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="edit-dialog" id="productDialog">
+    <form id="productForm" method="dialog">
+      <div class="dialog-header"><div><span id="dialogEyebrow">Product</span><h2 id="dialogTitle">Add a bat</h2></div><button class="close-dialog" id="closeProductDialog" type="button">×</button></div>
+      <input name="id" type="hidden">
+      <div class="form-grid dialog-form-grid">
+        <label>Product name<input name="name" required></label>
+        <label>Brand<input name="brand" required></label>
+        <label>Willow text<input name="willow"></label>
+        <label>Small badge<input name="badge" placeholder="Bestseller"></label>
+        <label>Price (₹)<input name="price" type="number" min="0"></label>
+        <label>MRP (₹)<input name="mrp" type="number" min="0"></label>
+        <label>Booking amount (₹)<input name="bookingAmount" type="number" min="0"></label>
+        <label class="check-label"><input name="inStock" type="checkbox"> Available for order</label>
+        <label class="check-label"><input name="featured" type="checkbox"> Show as featured</label>
+        <label class="wide">Short description<textarea name="summary" rows="3"></textarea></label>
+        <label class="wide">Features (one per line)<textarea name="features" rows="5"></textarea></label>
+      </div>
+      <section class="image-editor">
+        <div><h3>Product pictures</h3><p>First picture becomes the card picture.</p></div>
+        <label class="upload-button">+ Upload Pictures<input id="productImageUpload" type="file" accept="image/png,image/jpeg,image/webp" multiple></label>
+        <div class="editable-images" id="editableImages"></div>
+      </section>
+      <div class="dialog-actions"><button class="light-button" id="cancelProductButton" type="button">Cancel</button><button class="primary-button" type="submit">Save Product</button></div>
+    </form>
+  </dialog>
+
+  <script src="/js/admin.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+{
+  "settings": {
+    "brandName": "India's Branded Sports",
+    "shortName": "IBS",
+    "tagline": "Premium Willow",
+    "announcement": "Worldwide shipping \u2022 COD across India \u2022 Book your bat for only \u20b9500",
+    "heroTitle": "Premium Willow Bats for Serious Players",
+    "heroText": "Handmade, customised and top-grade cricket bats prepared for match day with free knocking, taping and oiling.",
+    "heroImage": "/assets/players/player-1.webp",
+    "storyImage1": "/assets/players/player-4.webp",
+    "storyImage2": "/assets/players/player-3.webp",
+    "storyImage3": "/assets/players/player-6.webp",
+    "logo": "/assets/brand/logo.webp",
+    "whatsapp": "916006699119",
+    "phoneDisplay": "+91 60066 99119",
+    "instagram": "indias_branded_sports",
+    "developerName": "Swastik Shukla",
+    "developerInstagram": "swastik_shukla__",
+    "defaultPrice": 5999,
+    "defaultMrp": 9999,
+    "bookingAmount": 500,
+    "deliveryTime": "3\u20134 days across India",
+    "shippingNote": "Shipping charges depend on the delivery location.",
+    "returnPolicy": "7-day return policy. Contact us on WhatsApp within 7 days of delivery with clear photos and an unboxing video for damaged, defective or incorrect products.",
+    "codNote": "\u20b9500 minimum confirmation amount. Remaining balance is Cash on Delivery within India. International payment is confirmed on WhatsApp.",
+    "freeServices": [
+      "Hammer knocking",
+      "Taping",
+      "Bat oiling",
+      "Knocking"
+    ],
+    "editorialDisclaimer": "Player imagery is displayed for editorial cricket inspiration. No individual athlete endorsement is implied. Brand names remain the property of their respective owners.",
+    "heroMiniOne": "/assets/players/player-2.webp",
+    "heroMiniTwo": "/assets/players/player-5.webp"
+  },
+  "products": [
+    {
+      "id": "mrf-genius",
+      "name": "MRF Genius",
+      "brand": "MRF",
+      "willow": "English Willow / Kashmir Willow",
+      "price": 5999,
+      "mrp": 9999,
+      "bookingAmount": 500,
+      "badge": "Bestseller",
+      "summary": "A powerful, match-ready profile with custom weight options and clean straight grains.",
+      "features": [
+        "Handmade finish",
+        "Custom weight and profile",
+        "Free knocking, taping and oiling",
+        "Bat cover subject to availability"
+      ],
+      "images": [
+        "/assets/products/mrf-genius-1.webp",
+        "/assets/products/mrf-genius-2.webp",
+        "/assets/products/mrf-genius-3.webp",
+        "/assets/products/mrf-genius-4.webp",
+        "/assets/products/mrf-genius-5.webp",
+        "/assets/products/mrf-genius-6.webp"
+      ],
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": "kookaburra-ghost-hac3",
+      "name": "Kookaburra Ghost HAC3",
+      "brand": "Kookaburra",
+      "willow": "English Willow / Kashmir Willow",
+      "price": 5999,
+      "mrp": 9999,
+      "bookingAmount": 500,
+      "badge": "Pro Profile",
+      "summary": "A clean traditional blade with a full profile and custom match preparation.",
+      "features": [
+        "Premium willow selection",
+        "Custom weight available",
+        "Free knocking and oiling",
+        "3\u20134 day India delivery"
+      ],
+      "images": [
+        "/assets/products/kookaburra-ghost-hac3-1.webp",
+        "/assets/products/kookaburra-ghost-hac3-2.webp",
+        "/assets/products/kookaburra-ghost-hac3-3.webp"
+      ],
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": "gm-diamond-b55",
+      "name": "GM Diamond B55",
+      "brand": "GM",
+      "willow": "English Willow / Kashmir Willow",
+      "price": 5999,
+      "mrp": 9999,
+      "bookingAmount": 500,
+      "badge": "Popular Choice",
+      "summary": "Broad sweet spot, pronounced spine and a balanced pickup for confident stroke play.",
+      "features": [
+        "Balanced pickup",
+        "Custom handle and weight",
+        "Free match preparation",
+        "Worldwide shipping"
+      ],
+      "images": [
+        "/assets/products/gm-diamond-b55-1.webp",
+        "/assets/products/gm-diamond-b55-2.webp",
+        "/assets/products/gm-diamond-b55-3.webp",
+        "/assets/products/gm-diamond-b55-4.webp",
+        "/assets/products/gm-diamond-b55-5.webp"
+      ],
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": "sg-premium-willow",
+      "name": "SG Premium Willow",
+      "brand": "SG",
+      "willow": "English Willow / Kashmir Willow",
+      "price": 5999,
+      "mrp": 9999,
+      "bookingAmount": 500,
+      "badge": "Customisable",
+      "summary": "Premium SG-style profile with custom stickers, weight, shape and handle options.",
+      "features": [
+        "Custom sticker options",
+        "Shape and weight customisation",
+        "Free knocking, taping and oiling",
+        "COD across India"
+      ],
+      "images": [
+        "/assets/products/sg-premium-willow-1.webp",
+        "/assets/products/sg-premium-willow-2.webp",
+        "/assets/products/sg-premium-willow-3.webp",
+        "/assets/products/sg-premium-willow-4.webp",
+        "/assets/products/sg-premium-willow-5.webp",
+        "/assets/products/sg-premium-willow-6.webp",
+        "/assets/products/sg-premium-willow-7.webp"
+      ],
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": "sg-hp-icon",
+      "name": "SG HP Icon",
+      "brand": "SG",
+      "willow": "English Willow / Kashmir Willow",
+      "price": 5999,
+      "mrp": 9999,
+      "bookingAmount": 500,
+      "badge": "Match Ready",
+      "summary": "A full, attacking profile designed for players who want power without losing pickup.",
+      "features": [
+        "Full profile",
+        "Custom grip and weight",
+        "Free bat preparation",
+        "7-day return policy"
+      ],
+      "images": [
+        "/assets/products/sg-hp-icon-1.webp",
+        "/assets/products/sg-hp-icon-2.webp",
+        "/assets/products/sg-hp-icon-3.webp",
+        "/assets/products/sg-hp-icon-4.webp",
+        "/assets/products/sg-hp-icon-5.webp",
+        "/assets/products/sg-hp-icon-6.webp"
+      ],
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": "ss-gunther",
+      "name": "SS Gunther",
+      "brand": "SS / TON",
+      "willow": "English Willow / Kashmir Willow",
+      "price": 5999,
+      "mrp": 9999,
+      "bookingAmount": 500,
+      "badge": "Premium Grain",
+      "summary": "A clean-grained bat with thick edges, a substantial spine and custom finishing.",
+      "features": [
+        "Premium grain selection",
+        "Thick-edge profile",
+        "Custom weight and handle",
+        "Free knocking and oiling"
+      ],
+      "images": [
+        "/assets/products/ss-gunther-1.webp",
+        "/assets/products/ss-gunther-2.webp",
+        "/assets/products/ss-gunther-3.webp",
+        "/assets/products/ss-gunther-4.webp",
+        "/assets/products/ss-gunther-5.webp",
+        "/assets/products/ss-gunther-6.webp",
+        "/assets/products/ss-gunther-7.webp",
+        "/assets/products/ss-gunther-8.webp",
+        "/assets/products/ss-gunther-9.webp"
+      ],
+      "featured": true,
+      "inStock": true
+    }
+  ]
+}
