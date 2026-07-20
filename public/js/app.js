@@ -263,7 +263,31 @@ function observeReveals() {
   $$('.reveal:not(.visible)').forEach((element) => observer.observe(element));
 }
 
+
+function wireHiddenAdminAccess() {
+  const logo = document.getElementById('brandLogo');
+  if (!logo) return;
+
+  let tapCount = 0;
+  let resetTimer;
+
+  logo.style.cursor = 'pointer';
+  logo.addEventListener('click', (event) => {
+    tapCount += 1;
+    clearTimeout(resetTimer);
+    resetTimer = setTimeout(() => { tapCount = 0; }, 3000);
+
+    if (tapCount >= 5) {
+      event.preventDefault();
+      clearTimeout(resetTimer);
+      tapCount = 0;
+      window.location.href = '/admin';
+    }
+  });
+}
+
 function wireEvents() {
+  wireHiddenAdminAccess();
   $('#menuButton')?.addEventListener('click', () => {
     const nav = $('#mainNav');
     const open = nav.classList.toggle('open');
